@@ -14,8 +14,7 @@ const snippets = [
   { id: "email", title: "email", text: "email" },
   { id: "date", title: "date", text: "date" },
   { id: "time", title: "time", text: "time" },
-  { id: "vimeobg", title: "vimeobg", text: "vimeobg" },
-  { id: "youtubebg", title: "youtubebg", text: "youtubebg" },
+  { id: "videobg", title: "videobg", text: "videobg" },
   { id: "alertbar", title: "alertbar", text: "alertbar" },
   { id: "popup", title: "popup", text: "popup" },
   { id: "common", title: "common", text: "common" },
@@ -132,11 +131,8 @@ function pasteText(text) {
                     if(text == 'phone') {
                       document.querySelector('[data-automation-id="Type--Plugin_Text_Value"]').value = 'Phone';
                     }
-                    if(text == 'vimeobg') {
-                      document.querySelector('[data-automation-id="Type--Plugin_Text_Value"]').value = 'Background Video Vimeo ID';
-                    }
-                    if(text == 'youtubebg') {
-                      document.querySelector('[data-automation-id="Type--Plugin_Text_Value"]').value = 'Background Video Youtube ID';
+                    if(text == 'videobg') {
+                      document.querySelector('[data-automation-id="Type--Plugin_Text_Value"]').value = 'Background Video ID';
                     }
 
                     if(document.querySelector('[data-automation-id="Type--Plugin_Text_Value"]').value != '') {
