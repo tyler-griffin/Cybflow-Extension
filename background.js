@@ -4,6 +4,7 @@ const snippets = [
   { id: "list", title: "list", text: "list" },
   { id: "text", title: "text", text: "text" },
   { id: "textarea", title: "textarea", text: "textarea"},
+  { id: "previewtext", title: "previewtext", text: "previewtext"},
   { id: "icon", title: "icon", text: "icon" },
   { id: "img", title: "img", text: "img" },
   { id: "bg", title: "bg", text: "bg" },
@@ -21,7 +22,8 @@ const snippets = [
   { id: "nav", title: "nav", text: "nav" },
   { id: "logo", title: "logo", text: "logo" },
   { id: "footerlogo", title: "footerlogo", text: "footerlogo" },
-  { id: "tag", title: "tag", text: "tag" }
+  { id: "tag", title: "tag", text: "tag" },
+  { id: "ifisset", title: "ifisset", text: "ifisset" }
 ];
 
 for (let snippet of snippets) {
@@ -109,6 +111,9 @@ function pasteText(text) {
                     }
                     if(text == 'textarea') {
                       document.querySelector('[data-automation-id="Type--Plugin_Text_Value"]').value = 'Text Area';
+                    }
+                    if(text == 'previewtext') {
+                      document.querySelector('[data-automation-id="Type--Plugin_Text_Value"]').value = 'Preview Text';
                     }
                     if(text == 'bg') {
                       document.querySelector('[data-automation-id="Type--Plugin_Text_Value"]').value = 'Background Image';
