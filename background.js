@@ -5,6 +5,7 @@ const snippets = [
   { id: "text", title: "text", text: "text" },
   { id: "textarea", title: "textarea", text: "textarea"},
   { id: "previewtext", title: "previewtext", text: "previewtext"},
+  { id: "html", title: "html", text: "html"},
   { id: "icon", title: "icon", text: "icon" },
   { id: "img", title: "img", text: "img" },
   { id: "bg", title: "bg", text: "bg" },
@@ -114,6 +115,9 @@ function pasteText(text) {
                     }
                     if(text == 'previewtext') {
                       document.querySelector('[data-automation-id="Type--Plugin_Text_Value"]').value = 'Preview Text';
+                    }
+                    if(text == 'html') {
+                      document.querySelector('[data-automation-id="Type--Plugin_Text_Value"]').value = 'HTML';
                     }
                     if(text == 'bg') {
                       document.querySelector('[data-automation-id="Type--Plugin_Text_Value"]').value = 'Background Image';
