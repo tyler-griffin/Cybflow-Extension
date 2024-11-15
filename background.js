@@ -10,6 +10,7 @@ const snippets = [
   { id: "img", title: "img", text: "img" },
   { id: "bg", title: "bg", text: "bg" },
   { id: "url", title: "url", text: "url" },
+  { id: "profileurl", title: "profileurl", text: "profileurl" },
   { id: "button", title: "button", text: "button" },
   { id: "buttontext", title: "buttontext", text: "buttontext" },
   { id: "phone", title: "phone", text: "phone" },
@@ -126,6 +127,9 @@ function pasteText(text) {
                       document.querySelector('[data-automation-id="Type--Plugin_Text_Value"]').value = 'Image';
                     }
                     if(text == 'url') {
+                      document.querySelector('[data-automation-id="Type--Plugin_Text_Value"]').value = 'Url';
+                    }
+                    if(text == 'profileurl') {
                       document.querySelector('[data-automation-id="Type--Plugin_Text_Value"]').value = 'Url';
                     }
                     if(text == 'icon') {
