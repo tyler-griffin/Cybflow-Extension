@@ -25,7 +25,18 @@ const snippets = [
   { id: "logo", title: "logo", text: "logo" },
   { id: "footerlogo", title: "footerlogo", text: "footerlogo" },
   { id: "tag", title: "tag", text: "tag" },
-  { id: "ifisset", title: "ifisset", text: "ifisset" }
+  { id: "ifisset", title: "ifisset", text: "ifisset" },
+  { id: "header", title: "header", text: "header" },
+  { id: "footer", title: "footer", text: "footer" },
+  { id: "inner", title: "inner", text: "inner" },
+  { id: "printblocks", title: "printblocks", text: "printblocks" },
+  { id: "preloader", title: "preloader", text: "preloader" },
+  { id: "pagebanner", title: "pagebanner", text: "pagebanner" },
+  { id: "pagetitle", title: "pagetitle", text: "pagetitle" },
+  { id: "pagesubtitle", title: "pagesubtitle", text: "pagesubtitle" },
+  { id: "breadcrumbs", title: "breadcrumbs", text: "breadcrumbs" },
+  { id: "style", title: "style", text: "style" },
+  { id: "script", title: "script", text: "script" }
 ];
 
 for (let snippet of snippets) {
@@ -91,7 +102,7 @@ function pasteText(text) {
           document.execCommand('paste');
         }, 50);
 
-        if(text != 'common' && text != 'profile' && text != 'tag' && text != 'popup' && text != 'alertbar' && text != 'footerlogo' && text != 'logo' && text != 'nav' && text != 'buttontext') {
+        if(text != 'common' && text != 'profile' && text != 'tag' && text != 'popup' && text != 'alertbar' && text != 'footerlogo' && text != 'logo' && text != 'nav' && text != 'buttontext' && text != 'header' && text != 'footer' && text != 'inner' && text != 'printblocks' && text != 'preloader' && text != 'pagebanner' && text != 'pagetitle' && text != 'pagesubtitle' && text != 'breadcrumbs' && text != 'style' && text != 'script') {
           setTimeout(() => {
             document.querySelector('[data-automation-id="id-attribute-input"]').select();
             setTimeout(() => {
